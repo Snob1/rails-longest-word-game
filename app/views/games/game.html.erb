@@ -1,0 +1,15 @@
+<!-- display  random word -->
+<div>
+  <p>"******** Welcome to the longest word-game!********"</p>
+  <p>"Here is your grid:"</p>
+  <p><%= @grid %></p>
+  <form action="/score">
+    <label for="words">Here you combine words</label>
+    <input type="text" name="words" id="words">
+    <input type="hidden" name="try" value= <% @try %> >
+    <input type="hidden" name="grid" value="<% @grid %>">
+    <input type="hidden" name="start_time" value=<% @start_time %>>
+    <input type="submit" value="Go">
+  </form>
+</div>
+<!-- make form to input guess -->
